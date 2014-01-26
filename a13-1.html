@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>A13.1 - jQuery Gallery</title>
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+
+<section>
+<h1>A13.1 - jQuery Gallery</h1>
+<h2>Purpose</h2>
+<p>The purpose of this assignment is to introduce you to the world of jQuery—a framework for javascript. You will learn how to develop a simple gallery lightbox using javascript and the jQuery library.</p>
+
+<h2>Description</h2>
+<p>Wether you are a photographer, graphic designer, or even a business wanting to showcase your work, the "lightbox" method has become a very popular way of showcasing images. Lightbox is a method used to display large images using modal dialogs. On a Lightbox-enabled page, a user can click an image to have it magnified in a Lightbox window, which resizes itself according to the size of the image using a gliding animation. jQuery helps this process to become even easier do and there's plenty of options to choose from.</p>
+</section>
+
+<section>
+
+<p>While there are dozens of lightbox scripts to choose from, two of the easiest scripts are</p>
+<ul>
+<li><a href="http://fancyapps.com/fancybox/" title="fancyBox - Fancy jQuery Lightbox Alternative">fancyBox by Jānis Skarnelis</a></li>
+<li><a href="http://leandrovieira.com/projects/jquery/lightbox/" title="jQuery lightBox plugin">jQuery Lightbox Plugin by Leandro Vieira Pinho</a></li>
+</ul>
+<p>Both, at the basic core, work very similarly, but, in our case, <strong>we'll use the FancyBox</strong>. There is a video tutorial provided for the jQuery Lightbox Plugin on module home page.</p>
+
+<h2>Resources for Assignment</h2>
+<ul>
+<li><a href="http://fancyapps.com/fancybox/">jQuery Fancybox Gallery</a></li>
+</ul>
+</section>
+
+
+<section>
+<h2>Video Walkthru</h2>
+
+<dl>
+	<dt>jQuery FancyBox Gallery</dt>
+	<dd><a href="files/a13-files/gallery-fancybox.zip">Exercise File for Videos</a></dd>
+	<dd>
+		<ol>
+		<li>YouTube &raquo; <a href="http://bit.ly/14XOlGk">jQuery Introduction</a></li>
+		<li>YouTube &raquo; <a href="http://bit.ly/XmrHCA">jQuery: FancyBox Gallery Setup</a></li>
+		<li>YouTube &raquo; <a href="http://bit.ly/ZgA9Qy">jQuery: FancyBox Gallery Completed</a></li>
+		</ol>
+	</dd>
+	
+</dl>
+
+<h2>Requirements</h2>
+<h3>Download Assignment File</h3>
+<ul>
+<li>Download the file: <strong><a href="files/a13-files/a13-lastname.zip">a13-lastname</a></strong></li>
+<li>Uncompress</li>
+<li>Rename the folder to have your lastname (e.g. a13-michaud)</li>
+</ul>
+
+<h3>Images:</h3>
+<p>I've provided your three images to start with, but you will need to add three more of your own (your own wok or images from some other source).</p>
+<ul>
+<li><strong>Your thumbnail images</strong> should be consistent with the thumbnails already provided (150px wide x 100px tall)</li>
+<li><strong>Your large images</strong> should be no taller than 680 pixels and no wider than 1024 pixels</li>
+</ul>
+
+
+
+<h3>HTML:</h3>
+<ul>
+<li>Create a basic HTML document (just like we've been doing). Make sure you have:
+<ul>
+	<li>The <strong><code>META</code></strong> element that has name="author" and content="your name".</li>
+	<li>Placed text in the <strong><code>TITLE</code></strong> element (e.g. The Gallery of Thomas Michaud).</li>
+</ul>
+</li>
+<li>Add the <strong><code>SCRIPT</code></strong> element for <a href="http://jquery.com/">jQuery</a> and fancybox</li>
+<li>Add the <strong><code>LINK</code></strong> element to the css document for fancybox</li>
+<li>Add another <strong><code>lINK</code></strong> element for your own css document (<strong>name it: gallery.css</strong>)</li>
+<li><strong>CONTENT</strong>: Place the images in an unordered list (UL and LI tags required)
+	<ul>
+		<li>Make sure the opening <strong><code>UL</code></strong> (<code>&lt;ul&gt;</code> tag has the <strong><code>class</code></strong> attribute with the value of <strong><code>"gallery"</code></strong></li>
+		<li>You can add a <strong><code>title</code></strong> attribute to the large image, if you want text below the image.</li>
+	</ul>
+	</li>
+<li>Make sure you place the last <strong><code>SCRIPT</code></strong> element (with the document ready function) just above the closing <code>&lt;/body&gt;</code> tag</li>
+<li>Make sure you validate your <code>HTML</code>!!</li>
+</ul>
+
+<h3>CSS: </h3>
+<p>Using CSS, Make sure the image thumbnails are shown in a horizontal row.</p>
+
+
+<h2>Tools</h2>
+<ul>
+<li>HTML Editor</li>
+<li>Image Editor</li>
+</ul>
+
+<h2>Submission</h2>
+<p>Very similar to previous exercises:</p>
+<ul>
+<li>Upload a compressed (.zip or .rar) folder with the name a13-<i>lastname</i> (ex. a13-michaud) </li>
+<li>Upload your work to the web server and submit the link below.</li>
+</ul>
+<ul>
+<li><strong>Remember</strong>, test your work online. Are the images showing up? If not, troubleshoot:</li>
+<li><strong>Are the images named correctly</strong>? (Myimage.jpg vs. myimage.jpg -- capitalization must be the same)</li>
+<li><strong>Are there any spaces</strong>? (ex: my image.jpg OR myimage .jpg) ... Make sure there are no spaces in the folder for the images as well (even after the name of the folder).</li>
+<li><strong>Check the permissions</strong> via the FTP application.</li>
+</ul>
+
+<h2>Screenshot</h2>
+<ul>
+<li>The images on the top row show how the images should be displayed (in a line and not stacked on top of each other).</li>
+<li><b>Challenge:</b> Additionally, the screenshot shows how you can make multiple sections of a gallery. However, you should make sure the images are grouped according to topic and the rel attribute value should be the same for that group. For example, pictures of people would have the rel value of "people" and pictures of nature would have the rel value of "nature". This type of grouping could be valuable if your portfolio show groups of your work (print, web, photography, etc.).</li>
+</ul>
+<img src="images/a13-screenshot-01.png" alt="">
+<img src="images/a13-screenshot-02.png" alt="">
+</section>
+
+</body>
+</html>

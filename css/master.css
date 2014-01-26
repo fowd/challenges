@@ -1,0 +1,10 @@
+body {
+	font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+section {
+	max-width: 960px;
+}
+section img {
+	width: 100%;
+}
+section p, .step dd{line-height:1.75em;}li,dt{line-height:1.25em;}code,dt{font-weight:bold;font-size:1.125em;}code{background:#eee;border-radius:4px; border: 1px solid #aaa; padding:2px 4px;}.css code{border-radius:0;border:none;}.step code{ background: #fefefe}.sel{color:blue;}.attr{color:#ff5168;}.val{color:green}.prop{color:#b84785;}.step{border-top:1px solid black;border-bottom: 1px solid black;padding: 10px 20px;background-color:#eee;}.comment{color:#888;}dt,dd{margin-bottom: .75em;}blockquote{font-family:"Georgia"; border-left: 6px solid #ccc;padding-left:10px;}dd li{line-height:2em;}.screenshot{border: 1px solid #999;box-shadow: 0 0 5px #333;margin: 10px;}hr.solid{border: 0; height: 1px; border-top: 1px solid #ccc; background-color: #ddd; color: #ddd; border-bottom: 1px solid #fff; height: 1px;*height: 3px;}aside{border-radius:4px;background:#ffffbd;border:1px solid #999;box-sizing:border-box;padding: 10px;}ol li ol{list-style: lower-roman; }.comment{ color: #aaa; }.highlight{background-color: #f6ff97;}section a:link, section a:visited{ color: #0c9ae1;} section a:hover {text-decoration:none; color:#0071c5;} code,pre{font-family: "Consolas","Courier New",monospace;}.step dd:before{content:'\00bb  ';color:red;}.warning{color:#ff3333;}.frame{border:3px solid #d2d2d2;}

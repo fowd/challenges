@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>A7 - Float, Position, and Display</title>
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+
+<section>
+
+<h1>A7 - Float, Position, and Display</h1>
+<h2>Goal</h2>
+<p class="css">To use what you've learned in this module and previous modules to modify your layout using the following properties: <code class="prop">float</code>, <code class="prop">position</code>, and <code class="prop">display</code>.</p>
+
+<h2>Description</h2>
+<p>For this assignment, we're going to focus only on our front page (index.html) and our a CSS document that will be only for our index.html document</p>
+
+<h2>Requirements</h2>
+
+<h3>First Steps</h3>
+<dl class="step">
+	<dt>General Requirements:</dt>
+<dd>Make sure you duplicate your last assignment folder and change it to: <strong>a7_1-<em>lastname</em></strong></dd>
+<dd><strong><a href="https://dl.dropboxusercontent.com/u/6128394/DGSN150/w04/a7-new-images.zip">Download new images for this assignment</a></strong> and <em>place them into your images folder</em></dd>
+<dd>Also, <strong>before submitting your assignment</strong>, make sure you read any feedback I give for assignment 6!</dd>
+</dl>
+
+
+<h3>Home Page Modifications</h3>
+<dl class="step">
+	<dt><strong>First</strong>, we're going to <strong>slightly modify our index.html</strong> document:</dt>
+<dd>First, add a new <code class="sel">&lt;link&gt;</code> element immediately <em><strong>after</strong></em> the previous <code class="sel">&lt;link&gt;</code> element (for your <code class="attr">css/site.css</code> document) -- the <strong>value</strong> for the new <code class="sel">&lt;link&gt;</code> <code class="attr">href</code> should be <code class="attr"><strong>css/homepage.css</strong></code></dd>
+<dd>To the opening <code class="sel">&lt;body&gt;</code> tag, add the following <strong>attribute &amp; value</strong>: <code class="attr">id="homepage</code>"</dd>
+<dd>Next, update the <code class="sel">li</code> elements for the <code class="sel">ul</code> element (see image)
+
+<p><img class="screenshot" src="images/a7-ul-code.jpg" alt="image of how the unordered structure should look on the navigation" width="600"/></p></dd>
+
+
+<!-- add in new-ul-nav -->
+</dl>
+<p class="highlight"><strong>Notice</strong> the additions of the <code class="attr">class</code> attribute and <code class="sel">span</code> elements for each item.</p>
+<p>That's it for the index.html document, let's move onto creating your CSS document.</p>
+
+<h3>New CSS Document</h3>
+<dl class="step">
+<dt>In your text editor, </dt>
+	<dd>create a <em><strong>new</strong></em> CSS document and </dd>
+	<dd><strong>File > Save As... ></strong> into your "css" folder and name it: <strong>homepage.css</strong></dd>
+</dl>
+<p>Next, we have a number of new rules we need to enter. Make sure you go through each step very carefully:</p>
+<dl class="step css">
+<dt>Make a new rule for the ID (<code class="sel">#</code>) selector with the value  <code class="sel">header</code></dt>
+<dd>Set the <code class="prop">height</code> to <code class="val">160px;</code></dd>
+</dl>
+<dl class="step css">
+	<dt>Make a new rule for the <code class="sel">img</code> selector</dt>
+	<dd>Have it <code class="prop">float</code> to the <code class="val">left;</code></dd>
+	<dd>Have the <code class="prop">margin-right</code> set to <code class="val">20px;</code></dd>
+</dl>
+<dl class="step css">
+	<dt>Make a new rule for the <code class="sel">ul</code> with the ID selector with the value <code class="val">nav</code></dt>
+	<dd>Set the <code class="prop">padding</code> (all sides) to <code class="val">0;</code></dd>
+	<dd>Set the <code class="prop">background-color</code> to <code class="val">transparent</code> ... (this overwrites our rule in <strong>site.css</strong> for the background color of our unordered list).</dd>
+</dl>
+<dl class="step css">
+	<dt>Make a new rule for the <code class="sel">#nav</code> selector with the descendant <code class="sel">li</code> selector</dt>
+	<dd>Set the <code class="prop">display</code> to <code class="val">inline-block;</code></dd>
+	<dd>Set the <code class="prop">position</code> to <code class="val">relative;</code></dd>
+	<dd>Set the <code class="prop">vertical-align</code> to <code class="val">bottom;</code></dd>
+	<dd>Set the <code class="prop">margin-right</code> to <code class="val">25px;</code></dd>
+</dl>
+
+<dl class="step css">
+	<dt>Make a new rule for the <code class="sel">#nav</code> selector with the descendant <code class="sel">li</code> with the pseudo-class selector <code class="sel">:last-child</code></dt>
+	<dd>Set the <code class="prop">margin-right</code> to <code class="val">0px;</code></dd>
+</dl>
+
+
+<dl class="step css">
+	<dt>Make a new rule for the <code class="sel">li</code> selector with the descendant <code class="sel">a</code> selector</dt>
+	<dd>Set the <code class="prop">display</code> to <code class="val">block;</code></dd>
+	<dd>Set the <code class="prop">width</code> to <code class="val">300px;</code></dd>
+	<dd>Set the <code class="prop">height</code> to <code class="val">175px;</code></dd>
+	<dd>Set the <code class="prop">padding-top</code> to <code class="val">20px;</code></dd>
+	<dd>Set the <code class="prop">text-decoration</code> to <code class="val">none;</code></dd>
+	<dd>Set the <code class="prop">border-radius</code> to <code class="val">10px;</code></dd>
+</dl>
+
+<dl class="step css">
+	<dt>Make a new rule for the <code class="sel">a</code> selector with the descendant <code class="sel">span</code> selector</dt>
+	<dd>Set the <code class="prop">font-family</code> to <code class="val">"Courier New", monospace;</code></dd>
+	<dd>Set the <code class="prop">font-size</code> to <code class="val">1.5em;</code></dd>
+	<dd>Set the <code class="prop">position</code> to <code class="val">absolute;</code></dd>
+	<dd>Set the <code class="prop">bottom</code> to <code class="val">5px;</code></dd>
+	<dd>Set the <code class="prop">width</code> to <code class="val">inherit;</code></dd>
+	<dd>Set the <code class="prop">text-align</code> to <code class="val">center;</code></dd>
+</dl>
+
+<dl class="step css">
+	<dt>Develop the following rules:</dt>
+	<dd>Set the <code class="sel">li a:link,</code> <code class="sel">li a:visited,</code> <em>and</em> <code class="sel">li a:active</code> to have a <code class="prop">background-color</code> of <code class="val">#333;</code> also set the <code class="prop">color</code> to <code class="val">#eee;</code></dd>
+	<dd>Set the <code class="sel">li a:hover</code> to have a <code class="prop">background-color</code> with a value of <code class="val">#aaa;</code></dd>
+</dl>
+
+<p><strong>For the final step</strong>, I'm going to help you set up the first rule, but you have to to the last two on your own. Check the screenshot below to see if you got what I have!</p>
+<dl class="step css">
+	<dt>Write a new rule for the <code class="sel">li</code> selector with the class (<code class="sel">.</code>) selector that has a value <code class="attr">html</code> and the descendant selector of <code class="sel">a</code></dt>
+	<dd>Set the <code class="prop">background-image</code> to find the <code class="val">icon-html.png</code> in the <strong>images</strong> folder</dd>
+	<dd>Set the <code class="prop">background-repeat</code> to <code class="val">no-repeat;</code></dd>
+	<dd>Set the <code class="prop">background-position</code> to <code class="val">center 50%</code></dd>
+</dl>
+
+
+<h2>Submission</h2>
+<ul>
+<li>Have on online version and submit a link to in the <strong>Online Notes</strong> section as well.</li>
+<li>Upload a compressed folder (<strong>a7_1-lastname</strong>) to this page</li>
+</ul>
+
+
+
+
+
+<h2>Screenshot</h2>
+<p>Click on image to view a larger image.</p>
+<a href="images/a7-1-screenshot.png"><img class="screenshot" width="650" src="images/a7-1-screenshot.png" alt="screenshot of the assignment result"></a>
+
+
+
+</section>
+</body>
+</html>

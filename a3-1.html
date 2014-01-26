@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>A3.1 - Links, Objects, Tables</title>
+	<link rel="stylesheet" href="css/master.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<section>
+<h1>A3.1 - Links, Objects, Tables</h1>
+<h2>Purpose</h2>
+<p>Use what you've learned this module and add more content to your site.</p>
+
+<h2>Requirements</h2>
+<p>Work through the following step, paying attention to each step in detail. If you have questions&mdash;or need clarification&mdash;make sure you ask. However, make sure you try and work through the step as much as possible before asking.</p>
+
+<dl class="step">
+	<dt>Duplicated Previous Assigment</dt>
+	<dd>make a copy of your Module 2 assignment folder</dd>
+	<dd>rename the folder to <strong>a3_1-yourlastname</strong></dd>
+</dl>
+
+<dl class="step">
+	<dt>Add an Image</dt>
+	<dd><p>On your home page (index.html), add a picture (photo or illustration) of yourself. Make sure the image is in a folder named "images".</p>
+	<ul>
+	<li><b>NOTE:</b> For now, the size should be no wider than 150 pixels and not taller than 150 pixels.</li>
+	
+	<li><b>THINK:</b> Are you choosing the right format for what you are showing&ndash;should you use a GIF, JPG, or PNG?</li>
+		</ul>
+	</dd>
+	<dd>Place the <code class="sel">img</code> element <em>just above</em> the <code class="sel">h1</code> element <em>but within</em> the <code class="sel">div</code> that has the <code  class="attr">id</code> attribute of <code class="val">"header"</code>.</dd>
+</dl>
+
+<hr class="solid">
+<h3>Create A New Document</h3>
+In this step, you'll create a new HTML document that will have the same basic global structure elements as the index.html document, but with different content between the <code class="sel">body</code> element.
+
+<dl class="step">
+	<dt>Create A New Document</dt>
+	<dd><strong>Create a new HTML document</strong> to your assignment folder called "html.html"
+		<ul>
+			<li>Like the index.html, it should have the <code>doctype</code>, <code class="sel">html</code>, <code>head</code>, <code>meta</code>, <code>title</code> and <code class="sel">body</code> elements</li>
+			<li><b>NOTE</b>: You can copy the index.html and simply change the content between the <code>title</code> tags and <code class="sel">body</code> tags</li>
+		</ul>
+	</dd>
+	
+</dl>
+
+<p>In the html.html document, you're going to add the following video:</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/C-NSR_K7yCo?rel=0" frameborder="0" allowfullscreen=""></iframe>
+
+
+<dl class="step">
+<dt>Embedding the Video</dt>
+<dd><a href="http://bit.ly/15BD65q">Go to the video</a> on YouTube&mdash;right-click on the link and select: "Open Link in a New Tab"</dd>
+<dd>Below the video, click the word: <b>Share</b></dd>
+<dd>Then click the word: <b>Embed</b></dd>
+<dd>Before copying the code in the little window, look at the text: Video Size
+<ul>
+	<li>Make sure the first option is set to Custom Size</li>
+	<li>In the next field, set the value to: 420</li>
+	<li>The next field should automatically be: 236</li>
+	<li><b>NOTE</b>: In the checkboxes below, make sure "Use old embed code [?]" is not checked!</li>
+	</ul>
+	</dd>
+<dd>Now, copy the iframe code and paste in the code between the <code class="sel">body</code> tags in the html.html document</dd>
+</dl>
+
+<aside>
+<p>The code you now have should look like:</p>
+<pre>&lt;iframe width="420" height="236"
+src="http://www.youtube.com/embed/vid0l1nkEx" frameborder="0"
+allowfullscreen&gt;&lt;/iframe&gt;
+</pre>
+<p><em><strong>NOTE: Don't copy and paste the example above, it won't work!</strong></em> You must follow the directions above.</p>
+</aside>
+
+<hr class="solid">
+
+<h3>Table of Contents</h3>
+<p>In the next set of steps, you're going to add a table below your video</p>
+
+<dl class="step">
+	<dt>Create the table</dt>
+	<dd>After the closing <code class="sel">iframe</code> tag, add the <code class="sel">table</code> element to your document.</dd>
+</dl>
+
+
+<dl class="step">
+	<dt>Adding Table Rows</dt>
+	<dd>Within the <code class="sel">table</code> element, you'll add your data:</dd>
+	<dd>
+		<ol style="border-bottom: 1px dashed #666">
+		<li>Add a <code class="sel">thead</code> element</li>
+		<li>Within the <code class="sel">thead</code> element, add a <code class="sel">tr</code> element</li>
+		<li>Within the <code class="sel">tr</code> element, add a <code class="sel">th</code> element and add the text: Foundations of Web Design: HTML and CSS
+		<ol>
+		<li>In the opening <code class="sel">th</code> tag, add the <code class="attr">colspan</code> attribute with the value of <code class="val">"2"</code>.</li>
+		</ol>
+		</li>
+		</ol>
+		<ol style="border-bottom:1px dashed #666">
+			<li>Add a <code class="sel">tbody</code> element after the closing <code class="sel">thead</code> tag</li>
+			<li>Within the <code class="sel">tbody</code> element add a <code class="sel">tr</code> element
+			
+				<ol>
+				<li>Within the first <code class="sel">tr</code> element add two <code class="sel">td</code> elements</li>
+				<li>Within the first <code class="sel">td</code> element, add the text: Chapter 1</li>
+				<li>Within the second <code class="sel">td</code> element, add the text: HTML Foundations</li>
+				</ol>
+			</li>
+			<li>After the first closing <code class="sel">tr</code> tag, add another <code class="sel">tr</code> element
+			<ol>
+				<li>Within the second <code class="sel">tr</code> element, add two <code class="sel">td</code> elements</li>
+				<li>Within the first <code class="sel">td</code> element, add the text: Chapter 2</li>
+				<li>Within the second <code class="sel">td</code> element, add the text: Text Elements</li>
+				</ol>
+			</li>
+			
+			<li>After the second closing <code class="sel">tr</code> tag, add a final <code class="sel">tr</code> element
+			<ol>
+				<li>Within the third <code class="sel">tr</code> element, add two <code class="sel">td</code> elements</li>
+				<li>Within the first <code class="sel">td</code> element, add the text: Chapter 3</li>
+				<li>Within the second <code class="sel">td</code> element, add the text: Links <code>&amp;amp;</code> Objects</li>
+			</ol>
+			</li>
+		</ol>
+		<ol style="border-bottom: 1px dashed #666;">
+		<li>Add a <code class="sel">tfoot</code> element after the closing <code class="sel">tbody</code> tag</li>
+		<li>Within the <code class="sel">tfoot</code> element add a <code class="sel">tr</code> element</li>
+		<li>Within the <code class="sel">tr</code> element, add a <code class="sel">td</code> element and add the text: Author: Thomas Michaud
+		<ol>
+		<li>In the opening <code class="sel">td</code> tag, add the <code class="attr">colspan</code> attribute with the value of <code class="val">"2"</code>.</li>
+		</ol>
+		</li>
+		</ol>
+	</dd>
+</dl>
+
+<h3>Styling your Table</h3>
+<p>While we could add borders to our table using HTML, we want to use CSS for presentation (design). Since you've not had an introduction to CSS yet, simply copy the highlighted CSS <code>style</code> element below and paste it between the opening and closing <code>head</code> tags&ndash;a good place is just after the <code>title</code> element:</p>
+<pre>
+<span class="comment">&lt;head&gt;
+&lt;title&gt;...&lt;/title&gt;</span>
+<span class="css">&lt;style type="text/css" media="screen"&gt;
+   table, tr, th, td{border:1px solid black;}
+   th, td{ padding: 4px;}
+&lt;/style&gt;</span>
+<span class="comment">&lt;/head&gt;</span>
+</pre>
+<hr class="solid">
+<h3>Add Link</h3>
+<p>Whoah! We need a way to get to the html.html page from your index.html page! Let's go back to the index.html page for a moment.</p>
+<p>You're going to create a <em>relative link</em> to the html.html document (how original!). So, here's what you need to do:</p>
+
+<dl class="step">
+	<dt>Creating a Hyperlink</dt>
+	<dd>Create an <code class="sel">a</code> tag that <em>wraps around</em> the word "HTML" in your <code class="sel">li</code>.</dd>
+	<dd>Add the <code class="attr">href</code> attribute to the opening <code class="sel">a</code> tag.</dd>
+	<dd>The <code class="attr">href</code> attribute should have a <em>value</em> that finds the <code class="val">html.html</code> document... wait, did I just give you the answer?</dd>
+</dl>
+<p>After you save the index.html document, open it in a browser and see if the text HTML is blue and underline. If it is, click on the text to see if it opens the html.html document in your browser.</p>
+<ul>
+<li>If the link works, move on to the final step</li>
+<li>If the link doesn't work, go through the steps and double check your work.</li>
+</ul>
+ 
+<dl class="step">
+<dt>On Your Own</dt>
+<dd>Now, can <em>you</em> add a link on your <strong>html.html</strong> document that gets you back to the <strong>index.html</strong> document?</dd>
+</dl>
+
+<p>Take a close look at the screenshot below, what do you notice was added that I haven't told you? Can you add the correct text headings, and <em>other</em> elements that you don't have? Just think it through. There's nothing new you have't done! The only thing you don't need to worry about is adding is any <code class="sel">div</code>s to the html.html document.</p>
+
+<h2>Screenshot</h2>
+<p>Here is the index.html document:</p>
+<img src="images/a3-1-1-screenshot.jpg" alt="screenshot of index page" width="600" class="screenshot">
+
+<p>Here is the html.html document:</p>
+<img src="images/a3-1-2-screenshot.jpg" alt="screenshot of html page" width="600" class="screenshot">
+
+<h2>Submission</h2>
+<p>You now the drill by now.</p>
+<ul>
+<li>Compress the <strong>a3_1-<em>yourlastname</em></strong> folder with</li>
+<ul>
+<li>index.html</li>
+<li>html.html</li>
+<li>folder: images
+<ul>
+<li>this folder should have an image of you!</li>
+</ul>
+</li>
+</ul>
+<li>Submit before the deadline listed below</li>
+</ul>
+
+</section>
+</body>
+</html>

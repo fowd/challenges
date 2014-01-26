@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>A6 - Box Model Layout</title>
+	<link rel="stylesheet" href="css/master.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<section class="section">
+<h1>A6 - Box Model Layout</h1>
+
+<h2>Overview</h2>
+<p>In this assignment, you'll be adding additional structure to your HTML documents, using the Box Model properties to enhance the look of the layout, and styling links and text a bit further.</p>
+
+
+<h2>Requirements</h2>
+
+<dl class="step">
+	<dt>Adding DIV elements</dt>
+	<dd>First off, modify <strong><em>each</em></strong> of your HTML documents (index.html, html.html, and css.html) to have the following structure:
+	<img width="600" src="https://dl.dropboxusercontent.com/u/6128394/DGSN150/w03/a6-div-structure.png" alt="picture of enhanced structure of all html documents">
+	</dd>
+</dl>
+<aside>
+	<p><strong>NOTE:</strong> Your <i>index.html</i> document already has the <code class="sel">div</code> element with the <code class="attr">id</code> attributes with the value of <code class="val">header</code> and <code class="val">main</code>. Use it as a reference for your <i>html.html</i> and <i>css.html</i>. Make sure you have no other <code class="sel">div</code> elements than the one's noted above.</p>
+</aside>
+</section>
+
+<hr class="solid">
+
+
+<section class="section">
+<!-- =============================  -->
+<aside>
+<p><strong class="warning">STOP:</strong> Make sure you <a href="https://dl.dropboxusercontent.com/u/6128394/DGSN150/w03/a6-images.zip">DOWNLOAD new images</a> (a6-images.zip 2kb) for this assignment (NOTE: take them out of the folder and add them to your images folder)</p>
+</aside>
+
+<dl class="step css">
+	<dt>Box Sizing</dt>
+	<dd>At the very top of your <strong>site.css</strong> document, and above the rule for the body (done in assignment 5), add the following rule:
+		<ul>
+			<li>Use the universal selector (<code class="sel">*</code>) to
+				<ul>
+					<li>set the <code class="prop">padding</code> and <code class="prop">margin</code> (on all sides) to a value of <code class="val">0</code>;</li>
+					<li>Set <code class="prop">box-sizing:</code> to <code class="val">border-box</code>;</li>
+					<li>Copy and paste the following to add <em>above</em> the declaration you just added:
+						<pre>
+							-moz-box-sizing: border-box;
+							-webkit-box-sizing: border-box;
+						</pre>
+						</li>
+				</ul>	
+			</li>
+		</ul>
+	</dd>
+		
+	<dd>This may not seem like they do much, but these rules really help in the layout of our site and help to make browsers act a little better (more consistently) with margin and padding.</dd>
+</dl>
+
+<hr class="solid">
+
+<!-- =============================  -->
+<dl class="step css">
+	<dt>Adding Background Images</dt>
+	<dd>In this next step, make sure you have the <em>bg_body.png</em> image—you downloaded at the top of this page—in your "images" folder!</dd>
+	
+	<dd>In the previous assignment, for the <code class="sel">body</code> selector, you already established the following properties: <code class="prop">background-color</code> and <code class="prop">font-family</code>, let's add more...
+		<ul>
+			<li>Set the <code class="prop">font-size</code> to <code class="val">1em;</code></li>
+			<li>Set the <code class="prop">background-image</code> to <code class="val">url(../images/bg_body.png);</code></li>
+			<li>Set the <code class="prop">background-repeat</code> is set to <code class="val">repeat-x;</code></li>
+			<li>Set the <code class="prop">background-position</code> is set to <code class="val">left top;</code></li>
+		</ul>
+	</dd>
+	<dd>If done correctly, you should now see a graphic (black and white line with a drop shadow) at the top of you web page that runs the length of your web browser.</dd>
+</dl>
+<hr class="solid">
+
+<!-- =============================  -->
+
+<dl class="step">
+	<dt>Adding Space to Paragraphs</dt>
+
+	<dd class="css">
+	For the <code class="sel">p</code> selector, set the <code class="prop">margin-bottom</code> to <code class="val">.625em</code>
+	<p>This adds spacing after each closing paragraph (<code class="sel">&lt;/p&gt;</code>) tag</p>
+	
+	</dd>
+</dl>
+
+<!-- =============================  -->
+<hr class="solid">
+
+
+<dl class="step css">
+	<dt>Add New Declaration blocks to the Navigation</dt>
+	<dd>In the previous assignment, you had already established the <code class="prop">background-color</code> for the <code class="sel">ul</code> selector with the <code class="attr">id</code> attribute of <code class="val">nav</code>
+		<ul>	
+			<li>Set the <code class="prop">padding</code> and set it to <code class="val">5px</code> on top and bottom and <code class="val">10px;</code> on left and right.</li>
+			<li>Then, set the <code class="prop">margin-bottom</code> (only) at <code class="val">10px;</code></li>
+		</ul>
+		<p>This adds some spacing to our navigation list.</p>
+	</dd>
+	
+</dl>
+
+<hr class="solid">
+<!-- =============================  -->
+
+<p>Now, move to the bottom (end) of your CSS (<em>site.css</em>) document...</p>
+<dl class="step">
+	<dt>Setting the Container Width</dt>
+	<dd>In your HTML (index.html, html.html, and css.html), I hope you added in the <code class="sel">div</code> with the <code class="attr">id</code> attribute that has a value of <code class="val">container</code> (refer back to the screenshot at the top of this page), because in the CSS you need to create a new rule for the <span class="css"><code class="sel">div</code> with the <code class="attr">#</code> (ID selector) that has the value <code class="val">container</code></span>:
+		<ul class="css">
+			<li>Set its <code class="prop">width</code> to <code class="val">960px;</code> (or better yet, to <code class="val">60em</code> ... why? It's more responsive to user settings!).</li>
+			<li>Set its <code class="prop">margin</code> to <code class="val">0</code> on top and bottom and <code class="val">auto;</code> to the left and right (remember the shorthand method!).</li>
+		</ul>
+	</dd>
+	<dd>The contents of your website (mainly the paragraphs) should no longer extend to the very edges of your browser when you increase the width to the sides of your screen.</dd>
+</dl>
+
+<!-- =============================  -->
+<hr class="solid">
+<dl class="step css">
+<dt>Spacing Up Top</dt>
+<dd>Next, let's create another new rule. This time we'll select the <code class="sel">div</code> with the id selector (<code class="attr">#</code>) with the value of <code class="val">header</code>:
+<ul>
+<li>Set the <code class="prop">margin-top</code> to <code class="val">20px</code></li>
+<li>Set the <code class="prop">margin-bottom</code> to <code class="val">20px</code></li>
+</ul>
+</dd>
+<dd>This gives us a little spacing above and below the contents for that div</dd>
+</dl>
+
+<!-- =============================  -->
+
+<hr class="solid">
+<p>Let's have your CSS add some styling to your photograph ... </p>
+<dl class="step css">
+<dt>Styling Your Picture</dt>
+<dd>make a new rule for the <code class="sel">div</code> with the id selector (<code class="attr">#</code>) with the value of <code class="val">header</code> with the descendant selector <code class="sel">img</code> (remember the difference between child and descendant). To it...
+<ul>
+<li>Set the <code class="prop">border</code> to <code class="val">1px</code> <code class="val">solid</code> and make it black -- but use the HEX (#123456) value (you need to figure out what that value is)!</li>
+<li>Set the <code class="prop">background-color</code> to white -- <strong>yes, the HEX value</strong>!</li>
+<li>Set the <code class="prop">padding</code> to <code class="val">5px;</code> (on all sides -- <strong>use the shorthand method</strong>!)</li>
+</ul>
+</dd>
+<dd>You should now have a white edge around your photo with a thin black border.</dd>
+</dl>
+
+
+<!-- =============================  -->
+<hr class="solid">
+
+<p>Okay, this next section is the <em>biggie</em> ... it affects (at this point) the text on the <em>index.html</em> page (where the <code class="sel">blockquote</code> is) ... take a look at the screenshots below, if you need to check how you're doing.</p>
+
+
+<!-- =============================  -->
+<dl class="step css">
+<dt>Styling Blockquote Text</dt>
+<dd>So, let's create a rule for the <code class="sel">blockquote</code> with the following properties and values:
+<ul>
+<li>Set the <code class="prop">font-size</code> to 2.5em;
+<ul>	
+<li>Note: This makes the font size 40px, if the default font size is 16px ... this also alters the value of all ems inside our blockquote as our font size has changed ... but only in our blockquote!)</li>
+</ul>
+</li>
+<li>Set the <code class="prop">width</code> to <code class="val">16.5em;</code>
+<ul>	
+<li>Note: This is equal to 660px ... 16px x 2.5em = 40px (font-size) ... 40px x 16.5em = 660px)</li>
+</ul>
+</li>
+<li>Set the <code class="prop">margin</code> to <code class="val">0</code> (top and bottom) and <code class="val">auto</code> (left and right) -- shorthand!</li>
+<li>Set the <code class="prop">padding</code> to <code class="val">10px</code> (top) <code class="val">10px</code> (right) <code class="val">10px</code> (bottom) <code class="val">45px</code> (left)</li>
+<li>Set the font <code class="prop">color</code> to <code class="val">#777;</code></li>
+<li>Set the <code class="prop">font-family</code> to <code class="val">Georgia, serif;</code></li>
+<li>Set the <code class="prop">font-style</code> to <code class="val">oblique;</code></li>
+<li>Set the <code class="prop">background-image</code> to <code class="val">url(../images/bigquote.png);</code></li>
+<li>Set the <code class="prop">background-repeat</code> to <code class="val">no-repeat;</code></li>
+<li>Set the <code class="prop">background-position</code> to <code class="val">left</code> (top/bottom) and <code class="val">8%;</code> (left/right).</li>
+</ul>
+</dd>
+</dl>
+
+<p>WHEW! That's it for that rule!</p>
+<p>The quoted text should look quite a bit different now (larger and centered) with a large graphic (quote mark) to the left of the text.</p>
+
+<!-- =============================  -->
+
+
+<hr class="solid">
+<p>However, the citation (-37 Signals) needs some help—let's address that next!</p>
+
+<dl class="step css">
+	<dt>Styling the Citation</dt>
+	<dd>Write a rule to select the <code class="sel">blockquote</code> with the descendant selector <code class="sel">footer</code>
+
+<ul>
+<li>Set the <code class="prop">display</code> to <code class="val">block;</code> 
+	<ul>
+		<li><strong>Note:</strong> While modern browsers recongnize the footer element as a block-level element, older browsers do not.</li>
+	</ul>
+</li>
+<li>Set the <code class="prop">font-size</code> to <code class="val">.4em;</code> (This brings the font-size down to 20px)</li>
+<li>set the font <code class="prop">color</code> to <code class="val">#888;</code></li>
+<li>Set the <code class="prop">text-align</code> to <code class="val">right;</code></li>
+</ul>
+</dd>
+<dd>Ah, we now can see the citation! It's smaller and off to the lower right of our quoted text.</dd>
+</dl>
+
+<hr class="solid">
+
+<p>That's it — WOW! Do you see how many lines of CSS you have? We could actually have less ... and, if you know now, give it a shot; but be warned, you'll get penalized if things don't work.</p>
+
+<h2>Validate</h2>
+<p>Remember to <a href="http://validator.w3.org/">validate your HTML documents</a></p>
+<p><a href="http://jigsaw.w3.org/css-validator/#validate_by_upload">Validate your CSS documents</a> too!</p>
+
+
+<!-- =============================  -->
+
+
+<h2>Submission</h2>
+<p>Same as the previous two assignments:</p>
+<ul class="step">
+<li>Upload your a6_1-lastname folder to your web server and provide a clickable link below in the ONLINE TEXT section</li>
+<li>Compress your a6_1-lastname folder and upload it to this assignment page</li>
+</ul>
+
+<!-- =============================  -->
+
+
+<h2>Screenshots</h2>
+<p><a href="https://dl.dropboxusercontent.com/u/6128394/DGSN150/w03/a6-screenshots.zip">Download a ZIP file</a> (562kb) that has larger images</p>
+
+<h3>index.html</h3>
+<img class="screenshot" width="600" src="https://dl.dropboxusercontent.com/u/6128394/DGSN150/w03/a6-screenshots/01-index-screenshot.png">
+<h3>html.html</h3>
+<img class="screenshot" width="600" src="https://dl.dropboxusercontent.com/u/6128394/DGSN150/w03/a6-screenshots/02-html-screenshot.png">
+<h3>css.html</h3>
+<img class="screenshot" width="600" src="https://dl.dropboxusercontent.com/u/6128394/DGSN150/w03/a6-screenshots/03-css-screenshot.png">
+</section>
+
+</body>
+</html>
