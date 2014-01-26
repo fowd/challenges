@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>A4.1 - FTP and CSS</title>
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+
+
+<section>
+	<h1>A4.1 - FTP and CSS</h1>
+<h2>Purpose</h2>
+
+<p>From what you learned in this module, you'll add a little CSS to your website, check for any validation errors, and upload your site to a web-server for the world to see!
+Goal</p>
+
+<p>This assignment will be more about learning how to upload your website to a web-server and learning how validation works than doing much with your HTML and CSS.</p>
+
+<h2>Requirements</h2>
+<dl class="step">
+<dt>Duplicate Assignment Folder</dt>
+
+    <dd>Create a duplicate of your a3_1-lastname folder and re-name it a4_1-lastname -- just like you did for the last assignment.
+    <p>So, your folder should contain (at this point) two html documents:</p>
+		<ul>
+		<li>index.html</li>
+		<li>html.html</li>
+		<li>as well as a folder named "images" with a picture of you (150px x 150px).</li>
+		</ul>		
+		</dd>
+		
+</dl>
+
+
+<hr class="solid">
+<p>Just like your<strong> html.html</strong> document in the last assignment, you will create a new html document called <strong>css.html</strong> to your assignment (<strong>a4_1-lastname</strong>) folder.</p>
+
+
+<dl class="step">
+	<dt>Create A New Document</dt>
+	<dd><strong>Create a new HTML document</strong> to your assignment folder called "css.html"
+		<ul>
+			<li>Like the index.html and html.html documents, it should have the <code>doctype</code>, <code class="sel">html</code>, <code>head</code>, <code>meta</code>, <code>title</code> and <code class="sel">body</code> elements</li>
+			<li><b>NOTE</b>: You can copy the index.html and simply change the content between the <code>title</code> tags and <code class="sel">body</code> tags</li>
+		</ul>
+	</dd>
+	
+</dl>
+<dl class="step">
+<dt>Add Heading</dt>
+	<dd>
+	Between the open and closing body element, add the following content:
+	<ul>
+	<li>Keep a heading level 1 (<code class="sel">h1</code>) element witht he text: Foundations of Web Design</li>
+	<li>Add a text heading level 2 element with the text: Learning CSS
+		<ul>	
+		<li><strong>Remember:</strong> this text should also be in the title element that is in the <code>head</code> element</li>
+		</ul>
+	</li>
+	</ul>
+	</dd>
+</dl>
+
+<dl class="step">
+	<dt>Add Paragraph</dt>
+
+	<dd>After the level 2 heading, place the following text within a paragraph <code class="sel">p</code> element:
+		
+		<blockquote>
+			<p>Cascading Style Sheets, or CSS, is the recommended way to control the presentation layer in a web document. The main advantage of CSS over presentational HTML markup is that the styling can be kept entirely separate from the content. For example, it's possible to store all the presentational styles for a 10,000-page web site in a single CSS file. CSS also provides far better control over presentation than do presentational element types in HTML.</p>
+		</blockquote>
+		</dd>
+	
+</dl>
+
+<dl class="step">
+	<dt>Add Another Paragraph</dt>
+	<dd>After the first PARAGRAPH text, place another <code class="sel">p</code> element that contains:
+
+	    <blockquote><p>The rule set consists of a selector--the text before the left curly brace, {-- and a declaration block (delimited with the curly braces, { ... }).</p></blockquote>
+		
+		</dd>
+</dl>
+
+<dl class="step">
+	<dt>Preformatted Text</dt>
+	<dd>
+	Next, add the following text just as you see it between the preformatted <code class="sel">pre</code> tags. <strong>NOTE:</strong> You don't need to worry about placing the paragraph element around them.
+
+	<blockquote class="code"> <p>selector { declaration block; }</p></blockquote>
+	</dd>
+</dl>
+
+<dl class="step">
+<dt>Add Image</dt>
+<dd>
+Then, directly after the closing <code class="sel">pre</code> tag, <a href="images/a4-1/css-syntax.png">DOWNLOAD</a> the css-syntax.png image (see example)
+
+<img src="images/a4-1/css-syntax.png" alt="css declaration block" width="300">
+</dd>
+</dl>
+
+<hr class="solid">
+<h3>Using CSS to Style</h3>
+<p>In the final step of working with your css.html document, you'll add some CSS to the page (like you did in Assignment 3). This time, I'm not going to give you the CSS to copy and paste&ndash;you'll have to figure out the rules needed from the description.</p>
+
+<dl class="step">
+	<dt>Adding CSS</dt>
+
+	<dd>Place the <code>style</code> element so it's contained within the <code>head</code> element and placed just after the closing <code>title</code> tag.
+
+<pre>
+<span style="color:#bbb">&lt;title&gt; ... &lt;/title&gt;</span>
+<span style="color:magenta">&lt;style&gt;</span>
+<span style="color: #ababab;">/* css rules go here */</span>
+<span style="color:magenta">&lt;/style&gt;</span>
+<span style="color:#bbb">&lt;/head&gt;</span>
+</pre>
+	
+	</dd>
+</dl>
+<dl class="step">
+<dt>Add a CSS Rule</dt>
+<dd>
+Within the <code>style</code> element, we want to select the text heading level 2 element and set the font color to orange. Remember:
+<ul>
+    <li>the text heading level 2 (<code class="sel">h2</code>) is the <em>selector</em></li>
+    <li>the <code class="prop">color</code> is the <em>property</em></li>
+    <li>and <code class="val">orange</code> is our <em>value</em></li>
+</ul>
+</dd>
+</dl>
+
+<p>Now your <code class="sel">h2</code> line of text should be orange in your document! Check your work against the screenshot.</p>
+<p class="highlight"><strong>Note:</strong> There is a step&mdash;linking to the index.html and html.html documents&mdash;that you'll need to work through!</p>
+
+<h2>Screenshot</h2>
+Make sure you compare each HTML document you've created to the screenshots below.
+<h3>Learning CSS</h3>
+<p>It should contain all new content, updated title element, and links to all previous documents.</p>
+<img src="images/a4-1-1-screenshot.png" class="screenshot">
+
+<h3>Homepage</h3>
+<p>It should contain links to the html.html and css.html documents.</p>
+<img class="screenshot" src="images/a4-1-2-screenshot.png">
+
+<h3>Learning HTML</h3>
+<p>This page should be updated so it links to the css.html document.</p>
+<img class="screenshot" src="images/a4-1-3-screenshot.png">
+
+
+<h2>Validation</h2>
+
+<p><strong>Remeber</strong>: <a href="http://validator.w3.org/#validate_by_upload">validate</a> the document! Do you remember how? Make sure you catch any errors and correct them.</p>
+
+<p>The only "problem" in your <strong>css.html</strong> document you should see is one warning that says: "Using experimental feature: HTML5 Conformance Checker."</p>
+
+
+<h2>Upload</h2>
+
+<p>You will now upload your assignment folder to the web-server. You will be given information for you username and password. You will need a FTP application to upload - for both Mac and PC, I suggest you use Cyberduck (FREE!).</p>
+
+<p>Once you've connected, drag your assignment folder to your web server.</p>
+
+
+
+<h2>Submission</h2>
+
+<p>You are required to submit two things for this assigment:</p>
+<ul>
+    <li>Submit your assignment folder compressed (.zip or .rar)</li>
+        <li>And provide a link to your website in the NOTES section of this assignment page.</li>
+</ul>
+</section>
+</body>
+</html>

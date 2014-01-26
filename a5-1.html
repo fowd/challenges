@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>A5.1 - A Change of Color</title>
+	<link rel="stylesheet" href="css/master.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<section>	
+<h1>A5.1 - A Change of Color</h1>
+
+<h2>Purpose</h2>
+<p>In this assignment, you'll use a single stylesheet to change colors and fonts styles across multiple HTML documents.</p>
+</section>
+
+<section>
+<h2>Requirements</h2>
+
+<dl class="step">
+	<dt>Duplicate Assignment Folder</dt>
+	<dd>Duplicate your a4_1-<em>lastname</em> folder and rename it to <strong>a5_1</strong>-<em>lastname</em></dd>
+</dl>
+
+<dl class="step">
+	<dt>Double Check Navigation</dt>
+	<dd>Make sure that all three HTML documents (index, html, css) have the <code class="attr">id</code> attribute with the value of <code class="value">"nav"</code> applied to the opening <code class="sel">ul</code> tag.
+		<ul>
+		<li>Check that your links all applied properly and working as they should.</li>
+		</ul>
+	</dd>	
+</dl>
+
+<dl class="step">
+	<dt>Create CSS folder and document</dt>
+	<dd>Within your assignment 5_1-lastname folder, create a new folder and name it: <strong>css</strong></dd>
+		<dd>Open your text editor and create a new document</dd>
+		<dd>Save this document (and place it within the css folder in your assignment 5_1-<em>lastname</em> folder) with the name: <strong>site.css</strong></dd>
+</dl>
+
+
+
+<p><strong>Stop and Check -</strong> Your folder structure should be:</p>
+<ul>
+<li><strong>a5_1-<em>lastname</em></strong>
+<ul>
+<li>css.html</li>
+<li>html.html</li>
+<li>index.html</li>
+<li>css
+<ul>
+<li>site.css</li>
+</ul>
+</li>
+<li>images
+<ul>
+<li><em>photo-of-you</em>.jpg</li>
+<li>css-syntax_2.png</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<h2>Working with CSS</h2>
+<p>In the <strong>site.css</strong> document you need to add the following rules...</p>
+<dl class="step css">
+<dt>Styling the background and text</dt>
+<dd> Add a rule that has a <code class="sel">body</code> selector with the following declarations:
+<ul>	
+<li>The <code class="prop">background-color</code> should be a gray with the value of <code class="val">#cccccc</code></li>
+<li>The <code class="prop">font-family</code> should be set to <code class="val">Helvetica, Arial, sans-serif</code></li>
+</ul>
+</dd>
+<dd>All text heading levels (<code class="sel">h1</code>-<code class="sel">h6</code>) should have a <code class="prop">font-family</code> of <code class="val">Georgia, serif</code>
+	<ul>
+		<li><strong>Note: </strong>you need to use the combination selector (,) for the text headers</li>
+		</ul>
+</dd>
+<dd>All <code class="sel">p</code> and <code class="sel">li</code> selectors should have a <code class="prop">line-height</code> of <code class="val">1.25em</code></dd>
+
+<dd>the <code class="sel">p</code> selector that has a <em>child</em> <code class="sel">em</code> selector should have a <code class="prop">font-weight</code> of <code class="val">bold</code></dd>
+
+<dd>Set the <code class="sel">ul</code> selector with the ID selector (<code class="sel">#</code>) of <code class="sel">nav</code> to a <code class="prop">background-color</code> value of <code class="val">#dddddd</code></dd>
+</dl>
+
+
+<dl class="step css">
+	<dt>Styling Anchor Elements</dt>
+	<dd>Set the <code class="sel">a</code> selector to: <code class="val">#008b14</code></dd>
+		<dd>Set another <code class="sel">a</code> selector with the pseudo <code class="sel">:link</code> to <code class="val">#008b14</code></dd>
+		<dd>Set another <code class="sel">a</code> selector with the pseudo <code class="sel">:visited</code> to <code class="val">#649a00</code></dd>
+		<dd>Set another <code class="sel">a</code> selector with the pseudo <code class="sel">:hover</code> to <code class="val">#00638b</code></dd>
+		<dd>Set another <code class="sel">a</code> selector with the pseudo <code class="sel">:active</code> to <code class="val">#008b14</code></dd>
+		<dd>Set another <code class="sel">a</code> selector with the pseudo <code class="sel">:focus</code> to <code class="val">#00638b</code></dd>
+</dl>
+
+
+<dl class="step">
+	<dt>Remove Old CSS</dt>
+	<dd>In the <strong>css.html</strong> document, delete the <code>style</code> element and the <span class="css">code changing the <code class="sel">h2</code> to the color <code class="val">orange</code></span>:
+<pre>
+<span style="text-decoration:line-through">&lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+h2 {color: orange;}
+&lt;/style&gt;</span>
+</pre>
+	
+	</dd>
+	<dd>In the <strong>html.html</strong> document move (don't simply copy but cut) <b>only</b> the CSS into the site.css (but not style element)&mdash;remember to delete the style element.
+<pre>	
+<span style="color: #aaa;text-decoration:line-through">&lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;</span>
+<span style="color: blue">table, tr, th, td{border:1px solid black;}
+th, td{ padding: 4px;}</span>
+<span style="color: #aaa;text-decoration:line-through">&lt;/style&gt;</span>
+</pre>	
+	</dd>
+</dl>
+
+
+
+<h3>Linking the Stylesheet</h3>
+<p>Last thing is to check to see if we can link our external style sheet to our HTML documents.</p>
+
+<dl class="step">
+	<dt>Using the <code>link</code> element</dt>
+	<dd>After the <code>title</code> element in <em><strong>each</strong></em> html document (css.html, html.html, and index.html), place a <code>link</code> element that finds your <strong>site.css</strong> document <em>in the css folder</em>.</dd>
+	<dd>Test your site. Did it work?</dd>
+	
+</dl>
+
+
+
+</section>
+
+
+<section>
+	<h2>Validate</h2>
+	<p>Remember to <a href="http://validator.w3.org/">validate your HTML documents</a></p>
+	<p>Oh, and you know that you can <a href="http://jigsaw.w3.org/css-validator/#validate_by_upload">VALIDATE YOUR CSS</a>?</p>
+	
+<h2>Submission</h2>
+<p>Just like assignment 4_1, your submission is two-fold:</p>
+<ol>
+<li><strong>Upload</strong> your assignment 5_1 folder <strong>to your web server</strong> and provide a <strong>clickable</strong> link in the TEXT BOX section below.</li>
+<li>Compress your assignment 5_1 folder and <strong>upload to this assignment page</strong>.</li>
+</ol>
+<h2>Screenshots</h2>
+<p>View the screenshots of each document. Does yours look similar?</p>
+<img class="screenshot" src="images/a5-1-1-screenshot.png">
+<img class="screenshot" src="images/a5-1-2-screenshot.png">
+<img class="screenshot" src="images/a5-1-3-screenshot.png">
+
+</section>
+
+
+
+</body>
+</html>

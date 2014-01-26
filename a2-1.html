@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>A2.1 - Text Elements</title>
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+<section>
+<h1>A2.1 - Text Elements</h1>
+<h2>Purpose</h2>
+<p>Learn how to structure content using HTML text elements.</p>
+
+<h2>Description</h2>
+<p>For this assignment, you'll use the <strong>index.html</strong> document from the previous assignment. Simply duplicate your previous folder (with the index.html) and then rename it to <strong>a2_1-yourlastname</strong>.</p>
+
+<h2>Requirements</h2>
+<h3>HEAD element</h3>
+<p>Add one <code class="sel">meta</code> element that has the following information:</p>
+<dl class="step">
+	<dt>Adding Meta Data to the <code class="sel">meta</code> element</dt>
+	<dd>Add the attribute <code class="attr">name=</code> with the value of <code class="val">"author"</code></dd>
+	<dd>Add the attribute <code class="attr">content=</code> with the value of <code class="val">"<code class="comment">[your name]</code>"</code>&mdash;add your name and remove the square brackets</dd>
+</dl>
+
+
+<h3>BODY Element</h3>
+<p>In this section, you'll add semantic (meaningful) text elements and add additional content</p>
+<dl class="step">
+	<dt>Step 1: Adding Header text elements.</dt>
+	<dd>Add a header text element level 1 (<code class="sel">h1</code>)element around "Foundations of Web Design".</dd>
+	<dd>Add a header text element level 2 (<code class="sel">h2</code>)element around your name.</dd>
+	<dd>Place a <code class="sel">div</code> element that surrounds both <code class="comment">h1</code> and <code class="comment">h2</code> elements and add an <code class="attr">id</code> attribute of <code class="val">"header"</code> to the opening <code class="sel">div</code> tag.</dd>
+</dl>
+
+<dl class="step">
+	<dt>Step 2: Creating an Unordered List</dt>
+	<dd>After the closing <code class="sel">div</code> tag, add an unordered list element (<code class="sel">ul</code>) with the following items within individual list elements (<code class="sel">li</code>):
+		<ul>
+			<li>HTML</li>
+				<li>CSS</li>
+				<li>JavaScript</li>
+				</ul>
+		</dd>
+	Add an <code class="attr">id</code> attribute with the value of <code class="value">"nav"</code> to the opening <code class="sel">ul</code> tag.
+</dl>
+
+
+<dl class="step">
+	<dt>Step 3: Adding a paragraph</dt>
+	<dd>After the closing <code class="sel">ul</code> tag, add a paragraph element (<code class="sel">p</code>)</dd>
+	<dd>Add the following text within the <code class="sel">p</code> element:
+	<blockquote>An introductory course developed to familiarize students with the design and creation of Web pages and Web sites. Students will learn basic HTML structure along with basic styling with CSS (Cascading Style Sheets).</blockquote>
+	</dd>
+	
+	<dd>Add an emphasis (<code class="sel">em</code>) element around the word "introductory"</dd>
+</dl>
+
+<dl class="step">
+	<dt>Step 4: Adding a quote</dt>
+	<dd>After the closing <code class="sel">p</code> tag, add a <code class="sel">blockquote</code> element that has the following content:
+
+	<blockquote>If you want to learn web design, make a website.</blockquote>
+</dd>
+	<dd>Make sure you wrap the text you added above in a PARAGRAPH tag.</dd>
+	<dd>Add a <code class="attr">cite</code> attribute to the opening <code class="sel">blockquote</code> tag with the following website value url: <code class="val">http://37signals.com/svn/posts/2538-the-first-step-is-to-start</code></dd>
+	<dd>After the text, add a <code class="sel">footer</code> element.</dd>
+	<dd>Within the <code class="sel">footer</code> element, add the text: <strong>- 37 Signals</strong>.</dd>
+	<dd>Add an inline <code class="sel">cite</code> element around "37 Signals" (not including the dash)&mdash;but make sure its contained within the footer element and only around the text.</dd>
+	<dd>Push yourself further ... While you don't know about adding links (yet), you know how to add HTML elements, attributes and values:
+		<ul>
+					<li>Add an anchor element (<code class="sel">a</code>) around "37 Signals" (not the dash(-))&ndash;<strong>Note:</strong> make sure the <code class="sel">a</code> element is within the footer element!</li>
+					<li>Add the <code class="attr">href</code> attribute to the opening a element with the value <code class="val">http://37signals.com/svn/posts/2538-the-first-step-is-to-start</code></li>
+					</ul>
+			</dd>
+</dl>
+
+<dl class="step">
+	<dt>Step 5: Adding a final <code class="sel">div</code> element</dt>
+	<dd>Add an opening  <code class="sel">div</code> tag before the <code class="sel">p</code> tag that starts "An introductory course..." and give it an <code class="attr">id</code> attribute with the value <code class="val">"main"</code>.</dd>
+		<dd>Add a closing <code class="sel">div</code> tag <em>after</em> the closing <code class="sel">blockquote</code> tag  that contains the quote from "-37 Signals"</dd>
+</dl>
+
+<h2>Screenshot</h2>
+<p>Compare your work to the following sample:</p>
+<img class="screenshot" src="images/a2-1-screenshot.png">
+<h2>Submission</h2>
+<ul>
+<li>Make sure your folder name is: <strong>a2_1-<em>yourlastname</em></strong> (yourlastname should be your own last name)</li>
+<li>Save the revised index.html inside of this folder</li>
+<li>Compress the folder (.zip or .rar format)</li>
+<li>Upload to this assignment page</li>
+</ul>
+</section>
+</body>
+</html>
